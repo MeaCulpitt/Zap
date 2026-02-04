@@ -1,12 +1,12 @@
-# Blink: Miner Design
+# Zap: Miner Design
 
-The Blink Miner is a high-performance, real-time compute node responsible for hosting game instances and streaming high-fidelity video with sub-millisecond precision. Unlike batch-processing subnets, Blink miners must operate in a synchronous, low-latency state to ensure a "local-feel" gaming experience.
+The Zap Miner is a high-performance, real-time compute node responsible for hosting game instances and streaming high-fidelity video with sub-millisecond precision. Unlike batch-processing subnets, Zap miners must operate in a synchronous, low-latency state to ensure a "local-feel" gaming experience.
 
 ---
 
 ## 1. Miner Tasks
 
-The Blink Miner pipeline is divided into four concurrent, low-latency execution blocks:
+The Zap Miner pipeline is divided into four concurrent, low-latency execution blocks:
 
 ### A. Instance Execution (The Engine)
 * **Containerized Hosting:** Execute game binaries within hardened, low-overhead environments (e.g., Docker with NVIDIA Container Toolkit).
@@ -16,11 +16,11 @@ The Blink Miner pipeline is divided into four concurrent, low-latency execution 
 ### B. Real-Time Frame Orchestration
 * **GPU Buffer Capture:** Direct capture of the GPU frame buffer to bypass system memory bottlenecks.
 * **Hardware Encoding:** Utilize NVENC (NVIDIA) or AMF (AMD) to compress video using H.264/AV1 protocols.
-* **Adaptive Bitrate (ABR):** Dynamically scale encoding quality in real-time based on fluctuating network conditions reported by the validator or user client.
+* **Adaptive Bitrate (ABR):** Dynamically scale encoding quality in real-time based on fluctuating network conditions.
 
 ### C. Signaling & Tunneling
 * **WebRTC Transport:** Maintain high-speed peer-to-peer tunnels for video/audio delivery.
-* **NAT Traversal:** Implement STUN/TURN protocols to ensure high availability across complex residential network topologies.
+* **NAT Traversal:** Implement STUN/TURN protocols to ensure high availability across residential network topologies.
 
 ### D. Proof of Effort Generation
 * **Cryptographic Heartbeat:** Generate unique hashes for randomized pixel-blocks in the frame buffer every 500ms to verify "Active Rendering" to the validator.
@@ -39,12 +39,11 @@ The Blink Miner pipeline is divided into four concurrent, low-latency execution 
 
 ## 3. Performance Dimensions
 
-Blink miners are evaluated on **Temporal Precision** and **Visual Stability**. Failure to meet these thresholds results in immediate score degradation.
+Zap miners are evaluated on **Temporal Precision** and **Visual Stability**. Failure to meet these thresholds results in immediate score degradation.
 
 ### Quality (Visual Fidelity)
 * **Metric:** SSIM (Structural Similarity Index) and VMAF (Video Multi-Method Assessment Fusion).
 * **Threshold:** Maintain a VMAF score of **>90** during active gameplay. 
-* **Note:** Intentional bitrate throttling to save bandwidth is flagged as adversarial behavior.
 
 ### Speed (Latency & Jitter)
 * **Network Latency:** Total RTT (Round Trip Time) to the target user/validator must be **<30ms**.
@@ -54,14 +53,3 @@ Blink miners are evaluated on **Temporal Precision** and **Visual Stability**. F
 ### Accuracy (State Integrity)
 * **Input-Action Coherence:** The miner must prove that video output reflects user input within a 2-frame window (approx. 33ms at 60fps).
 * **Hardware Integrity:** Miners must respond to synthetic "GPU Benchmarks" sent by validators to ensure the hardware is a legitimate physical GPU and not a virtualized relay.
-
----
-
-## 4. Minimum Hardware Requirements
-
-| Component | Specification |
-| :--- | :--- |
-| **GPU** | NVIDIA RTX 3080 / 4080 or higher (required for low-latency NVENC) |
-| **Network** | Symmetric Fiber (1Gbps+ Up/Down) |
-| **OS** | Optimized Linux (Ubuntu 22.04+) with RT-PREEMPT kernel |
-| **Memory** | 32GB DDR5 |
