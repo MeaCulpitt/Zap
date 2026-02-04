@@ -1,16 +1,16 @@
-# Blink: Go-To-Market Strategy
+# Zap: Go-To-Market Strategy
 
-The Blink GTM strategy focuses on aggressive geographic expansion and frictionless developer integration, utilizing Bittensor's emission schedule to subsidize the "Last Mile" of cloud gaming.
+The Zap GTM strategy focuses on aggressive geographic expansion and frictionless developer integration, utilizing Bittensor's emission schedule to subsidize the "Last Mile" of cloud gaming.
 
 ---
 
 ## 1. Initial Target Users & Use Cases
 
-Blink prioritizes users and developers who suffer most from centralized infrastructure limitations.
+Zap prioritizes users and developers who suffer most from centralized infrastructure limitations.
 
 ### A. The "Global South" Competitive Gamer
 * **Target:** High-fiber regions in Latin America, SE Asia, and Africa.
-* **Value Prop:** Reduces ping from >100ms (to centralized hubs) to <15ms (to local Blink nodes).
+* **Value Prop:** Reduces ping from >100ms (to centralized hubs) to <15ms (to local Zap nodes).
 
 ### B. Indie "Instant Play" Pilot Partners
 * **Target:** Developers looking to increase demo conversion rates.
@@ -18,15 +18,15 @@ Blink prioritizes users and developers who suffer most from centralized infrastr
 
 ### C. The "Web3-Native" Cloud Console
 * **Target:** Crypto-native gamers and DePIN enthusiasts.
-* **Use Case:** A hardware-agnostic portal allowing low-end devices to stream high-fidelity Steam/Epic libraries via the Blink grid.
+* **Use Case:** A hardware-agnostic portal allowing low-end devices to stream high-fidelity Steam/Epic libraries via the Zap grid.
 
 ---
 
 ## 2. Distribution & Growth Channels
 
-Blink scales through technical integration rather than high-cost advertising.
+Zap scales through technical integration rather than high-cost advertising.
 
-* **Blink SDK:** A "one-click" middleware for Unreal Engine 5 and Unity, allowing developers to offload rendering to the subnet natively.
+* **Zap SDK:** A "one-click" middleware for Unreal Engine 5 and Unity, allowing developers to offload rendering to the subnet natively.
 * **Browser-Extension Strategy:** Chrome/Edge extensions that offer instant "Cloud Boosting" for web-based games and store pages.
 * **Regional KOL Challenges:** High-profile "Ping Showdowns" with local streamers to prove the superiority of decentralized edge-nodes over centralized regional data centers.
 
@@ -34,7 +34,7 @@ Blink scales through technical integration rather than high-cost advertising.
 
 ## 3. Incentives for Early Participation
 
-Blink uses $TAO$ emissions to solve the infrastructure bootstrapping problem.
+Zap uses subnet emissions and dTAO mechanics to solve the infrastructure bootstrapping problem.
 
 ### Miner Incentives: The "Scarcity Bounty"
 * **Regional Multipliers:** 2.5x emission rewards for the first miners in "Zero-Node" urban centers.
