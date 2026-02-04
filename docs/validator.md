@@ -1,6 +1,6 @@
-# Blink: Validator Design
+# Zap: Validator Design
 
-The Blink Validator acts as a high-frequency auditor, ensuring that the network's "Edge" claims are backed by physical reality and high-performance hardware.
+The Zap Validator acts as a high-frequency auditor, ensuring that the network's "Edge" claims are backed by physical reality and high-performance hardware.
 
 ---
 
@@ -24,18 +24,18 @@ Validators rank miners based on a composite score derived from three primary ver
 
 ## 2. Evaluation Cadence
 
-Blink's validation operates on a tiered temporal structure:
+Zap's validation operates on a tiered temporal structure:
 
-* **Real-Time (10s):** Latency and heartbeat pings.
-* **Random Audits (Monthly Hourly):** Synthetic gaming sessions to test I2P and frame hashes.
-* **Blockchain Epoch (360 Blocks):** Weight commitments to the Subtensor.
+* **Real-Time (10s):** Latency and heartbeat pings to verify continuous availability.
+* **Synthetic Audits (Randomly, 15x/hour):** Short, high-intensity "Ghost Sessions" to perform I2P and VMAF checks.
+* **Blockchain Epoch (360 Blocks):** Aggregation of performance metrics and weight commitments to the Subtensor blockchain.
 
 ---
 
 ## 3. Validator Incentive Alignment
 
-Blink follows the standard Bittensor Yuma Consensus (YC) model with specialized gaming guardrails:
+Zap follows the 2026 Bittensor Yuma Consensus (YC) model, reinforced by dTAO market mechanics:
 
-* **Consensus-Driven Rewards:** Validators earn $TAO$ dividends by correctly identifying high-performing miners. Deviating from the consensus (e.g., scoring a slow miner highly) results in a "Trust Penalty" and reduced emissions.
-* **Anti-Collusion:** Because scoring is based on deterministic physical metrics (Latency/SSIM), it is difficult for a validator and miner to collude without being mathematically flagged as an outlier by other validators.
-* **Stake-Weighted Authority:** The influence of a validator’s score is proportional to their total stake, ensuring that the most "heavily invested" actors have the strongest incentive to maintain network quality.
+* **Consensus-Driven Dividends:** Validators maximize their TAO earnings by accurately ranking miners. Deviating from the global consensus (e.g., scoring a slow miner highly) results in a "Trust Penalty," reducing validator rewards.
+* **Alpha-Stake Accountability:** Validators must hold the subnet's native Alpha token. This ensures that their long-term wealth is tied to the actual utility and user adoption of the Zap network.
+* **Anti-Collusion Logic:** Because scoring is based on deterministic physical metrics (Latency/VMAF), any validator providing outlier scores is mathematically identified and excluded from consensus, protecting the network from "bribery" or "lazy validation."
